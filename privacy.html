@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy — Maranatha Praise Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Maranatha Praise Center logo" class="logo">
+        <span class="brand-text">Maranatha Praise Center</span>
+      </a>
+      <nav class="nav">
+        <a href="about.html">About</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h1>Privacy & Cookies</h1>
+    <p>We respect your privacy. This site uses a consent-controlled embedded map. The map is loaded only if you click "Load Map", and that preference is stored locally in your browser. The contact form posts to Formspree (a third-party service) — replace the form action with your Formspree form ID if you use it.</p>
+    <h2>Data stored locally</h2>
+    <ul>
+      <li><strong>mpc_map_consent</strong> — stores whether you allowed the embedded Google Map.</li>
+      <li><strong>mpc_cookies_consent</strong> — stores site-wide cookie consent if you accepted cookies.</li>
+    </ul>
+    <h2>Contact form</h2>
+    <p>Form submissions are sent to the configured service (Formspree). Email addresses entered are used to respond to your message; we do not share addresses publicly.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Maranatha Praise Center — <a href="mailto:maranathapraisecenter@gmail.com">maranathapraisecenter@gmail.com</a> — <a href="https://www.google.com/maps/place/Langas,+Eldoret,+Kenya" target="_blank" rel="noopener">Map</a></p>
+      <p>&copy; <span id="year"></span> Maranatha Praise Center</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="scripts.js"></script>
+</body>
+</html>

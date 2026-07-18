@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ministries — Maranatha Praise Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Maranatha Praise Center logo" class="logo">
+        <span class="brand-text">Maranatha Praise Center</span>
+      </a>
+      <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="primary-nav" class="nav" data-visible="false">
+        <a href="about.html">About</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div id="nav-status" class="sr-only" aria-live="polite" role="status"></div>
+  <main class="container">
+    <h1>Ministries</h1>
+    <p>We offer programs for children, youth, adults, and outreach teams serving the local community.</p>
+    <ul>
+      <li>Children's Ministry</li>
+      <li>Youth Group</li>
+      <li>Food Pantry and Community Meal</li>
+    </ul>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Maranatha Praise Center — <a href="mailto:maranathapraisecenter@gmail.com">maranathapraisecenter@gmail.com</a> — <a href="https://www.google.com/maps/place/Langas,+Eldoret,+Kenya" target="_blank" rel="noopener">Map</a></p>
+      <p>&copy; <span id="year"></span> Maranatha Praise Center</p>
+    </div>
+  </footer>
+  <div class="cookie-banner" style="display:none;">
+    <p>We use cookies for analytics and to improve your experience. Accept cookies to enable full functionality.</p>
+    <div class="cookie-actions">
+      <button class="btn accept-cookies">Accept</button>
+      <a class="btn secondary" href="privacy.html">Manage</a>
+      <button class="btn secondary decline-cookies">Decline</button>
+    </div>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+name: Accessibility audit (Lighthouse)
+
+on:
+  workflow_dispatch:
+    inputs:
+      site_url:
+        description: 'URL to audit (e.g. https://username.github.io/repo)'
+        required: true
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v8
+        with:
+          urls: '${{ github.event.inputs.site_url }}'
+          config: '{"ci": {"collect": {"numberOfRuns": 1}}}'

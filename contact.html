@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — maranatha praise center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.svg" alt="Logo" class="logo">
+        <span class="brand-text">maranatha praise center</span>
+      </a>
+      <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="primary-nav" class="nav" data-visible="false">
+        <a href="about.html">About</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <div id="nav-status" class="sr-only" aria-live="polite" role="status"></div>
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Email: <a href="mailto:maranathapraisecenter@gmail.com">maranathapraisecenter@gmail.com</a></p>
+    <p>Address: <a href="https://www.google.com/maps/place/Langas,+Eldoret,+Kenya" target="_blank" rel="noopener">Langas, Eldoret, Kenya</a> — <a href="https://www.google.com/maps/place/Langas,+Eldoret,+Kenya" target="_blank" rel="noopener">View on Google Maps</a></p>
+
+    <section class="map">
+      <h2>Location</h2>
+      <div class="map-consent" id="map-consent">
+        <p>To display the embedded Google Map we need your consent (maps may set cookies and contact Google servers). Choose below to load the map.</p>
+        <div class="consent-actions">
+          <button id="load-map" class="btn">Load Map</button>
+          <button id="deny-map" class="btn secondary">Don't allow</button>
+        </div>
+      </div>
+
+      <div id="map-container" class="map-container" aria-hidden="true"></div>
+
+      <p><a href="https://www.google.com/maps/dir/?api=1&destination=Langas,+Eldoret,+Kenya" target="_blank" rel="noopener">Get directions</a></p>
+      <p><strong>Parking / arrival notes:</strong> Street parking is available nearby. If you need assistance finding us, email <a href="mailto:maranathapraisecenter@gmail.com">maranathapraisecenter@gmail.com</a>.</p>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact form</h2>
+      <p>Send us a message — we aim to respond within 48 hours.</p>
+      <form action="https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID" method="POST">
+        <!-- Honeypot field for spam protection; keep name as _gotcha for Formspree -->
+        <label class="sr-only">Leave this field blank<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+        <label>
+          Your name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="fredmerengo2003@gmail.com" name="fredmerengo2003@gmail.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="welcome to maranatha praise center" rows="5" required></textarea>
+        </label>
+        <input type="hidden" name="_subject" value="Website contact form">
+        <button type="submit" class="btn">Send message</button>
+      </form>
+      <p class="note">Alternatively, you can email us at <a href="mailto:maranathapraisecenter@gmail.com">maranathapraisecenter@gmail.com</a>.</p>
+      <noscript><p>Please enable JavaScript to use the form, or email <a href="mailto:maranathapraisecenter@gmail.com">maranathapraisecenter@gmail.com</a>.</p></noscript>
+    </section>
+    <h2>Visit</h2>
+    <p>Sunday Worship — 9:00 AM</p>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Maranatha Praise Center — <a href="mailto:maranathapraisecenter@gmail.com">maranathapraisecenter@gmail.com</a> — <a href="https://www.google.com/maps/place/Langas,+Eldoret,+Kenya" target="_blank" rel="noopener">Map</a></p>
+      <p>&copy; <span id="year"></span> Maranatha Praise Center</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="scripts.js"></script>
+  
+  <div class="cookie-banner" style="display:none;">
+    <p>We use cookies for analytics and to improve your experience. Accept cookies to enable full functionality.</p>
+    <div class="cookie-actions">
+      <button class="btn accept-cookies">Accept</button>
+      <a class="btn secondary" href="privacy.html">Manage</a>
+      <button class="btn secondary decline-cookies">Decline</button>
+    </div>
+  </div>
+</body>
+</html>
