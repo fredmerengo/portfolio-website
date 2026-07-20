@@ -1,32 +1,37 @@
-# portfolio-website
-my personal portfolio website
+# Maranatha Praise Center Website
 
----
-Site scaffold: simple static church website added (index, about, ministries, contact, styles, logo).
+A simple static church website for Maranatha Praise Center, built with HTML, CSS, and JavaScript.
 
-This scaffold uses the church name "Maranatha Praise Center" and the contact email `maranathapraisecenter@gmail.com`.
+## What’s included
+- Home page with welcome content and events
+- About page
+- Ministries page
+- Contact page with location links and a consent-based map
+- Privacy and cookie information page
+- GitHub Pages deployment workflow
+- Accessibility audit workflow
+- SEO metadata and sitemap
 
-To preview, open [index.html](index.html) in a browser.
+## Preview locally
+Open [index.html](index.html) in a browser, or run:
 
-Local preview
-```
+```bash
 python -m http.server 8000
-# open http://localhost:8000
 ```
 
-Contact form
-- The contact form posts to Formspree. Replace the form action `REPLACE_WITH_YOUR_FORM_ID` in `contact.html` with your Formspree form ID (read Formspree docs).
+Then open http://localhost:8000
 
-Map consent
-- The contact page uses a consent-controlled placeholder for the embedded Google Map. On first visit you'll be asked to load the map; your choice is stored in `localStorage` under `mpc_map_consent`.
-- To reset consent in your browser, run `localStorage.removeItem('mpc_map_consent')` in the console and reload the page.
+## Deployment
+This repository includes a GitHub Actions workflow in [.github/workflows/deploy.yml](.github/workflows/deploy.yml) that publishes the site using the GitHub Pages Actions workflow on pushes to `main`.
 
-Cookie banner
-- The site shows a cookie consent banner on first visit. Your choice is stored in `localStorage` under `mpc_cookies_consent`.
-- To reset, run `localStorage.removeItem('mpc_cookies_consent')`.
+After the first push, enable GitHub Pages in the repository settings and use the GitHub Actions deployment source.
 
-Deployment
-- This repo includes a GitHub Actions workflow `.github/workflows/deploy.yml` that will publish the repository root to the `gh-pages` branch on push to `main`. After first push, enable GitHub Pages to serve from `gh-pages` in your repository settings.
+## Search and indexing
+The site includes:
+- SEO meta tags
+- Open Graph tags
+- a sitemap at [sitemap.xml](sitemap.xml)
+- a robots file at [robots.txt](robots.txt)
 
-Accessibility audit
-- There's a manual workflow `.github/workflows/a11y.yml` you can run from the Actions tab. Provide your site URL (e.g. `https://<username>.github.io/<repo>`) to run a Lighthouse accessibility audit.
+## Accessibility audit
+A manual Lighthouse workflow is available in [.github/workflows/a11y.yml](.github/workflows/a11y.yml). Run it from the GitHub Actions tab and provide the published site URL.
